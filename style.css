@@ -33,4 +33,20 @@ body {
 
 .image {
   width: 450px;
+  transition: all 1s;
+}
+
+.slider-img:nth-child(even) {
+  transform: translateX(30%);
+  opacity: 0;
+}
+
+.slider-img:nth-child(odd) {
+  transform: translateX(-30%);
+  opacity: 0;
+}
+
+.active {
+  transform: translateX(0);
+  opacity: 1;
 }
